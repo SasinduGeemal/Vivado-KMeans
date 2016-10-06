@@ -7,7 +7,7 @@
 * Additional Comments: distributed under a BSD license, see LICENSE.txt
 *
 **********************************************************************/
-
+#define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h>
 #include <stdlib.h>
 //#include <stdbool.h>
@@ -178,23 +178,23 @@ void conv_int_to_tree_node(uint *in_lo_lo, uint *in_lo_hi, uint *in_hi_lo, uint 
 
 void make_data_points_file_name(char *result, uint n, uint k, uint d, double std_dev,uint index)
 {    
-    sprintf(result,"simulation/data_points_N%d_K%d_D%d_s%.2f.mat",n,k,d,std_dev,index); 
+    sprintf(result,"G:/PARAQUM/K-mean_Clustering/Vivado-KMeans/c_code_for_comparison/simulation/data_points_N%d_K%d_D%d_s%.2f.mat",n,k,d,std_dev,index); 
 }
 
 void make_initial_centres_file_name(char *result, uint n, uint k, uint d, double std_dev, uint index)
 {    
-    sprintf(result,"simulation/initial_centres_N%d_K%d_D%d_s%.2f_%d.mat",n,k,d,std_dev,index);
+    sprintf(result,"G:/PARAQUM/K-mean_Clustering/Vivado-KMeans/c_code_for_comparison/simulation/initial_centres_N%d_K%d_D%d_s%.2f_%d.mat",n,k,d,std_dev,index);
 }
 
 
 void make_clustering_centres_file_name(char *result, uint n, uint k, uint d, double std_dev, uint index)
 {
-    sprintf(result,"simulation/clustering_centres_N%d_K%d_D%d_s%.2f_%d.mat",n,k,d,std_dev,index);   
+    sprintf(result,"G:/PARAQUM/K-mean_Clustering/Vivado-KMeans/c_code_for_comparison/simulation/clustering_centres_N%d_K%d_D%d_s%.2f_%d.mat",n,k,d,std_dev,index);   
 }
 
 void make_data_set_info_file_name(char *result, uint n, uint k, uint d, double std_dev,uint index)
 {
-    sprintf(result,"simulation/data_set_info_N%d_K%d_D%d_s%.2f_%d.mat",n,k,d,std_dev,index);   
+    sprintf(result,"G:/PARAQUM/K-mean_Clustering/Vivado-KMeans/c_code_for_comparison/simulation/data_set_info_N%d_K%d_D%d_s%.2f_%d.mat",n,k,d,std_dev,index);   
 }
 
 

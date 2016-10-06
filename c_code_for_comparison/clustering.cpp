@@ -10,7 +10,7 @@
 
 #include "clustering.h"
 #include <time.h>
-#include <sys/time.h>
+//#include <sys/time.h>
 
 
 // wrapper function for buildkdTree
@@ -56,13 +56,13 @@ void clustering(uint n, uint k, centre_type *initial_centres, data_type_short *d
         centres[i].position_short = initial_centres[i].position_short;        
     }
     
-    // start timer
+   /* // start timer
     clock_t t;
     t = clock();
     struct timeval start, end;
     unsigned long long usecs;
     GETTIME(start); 
-        
+   */     
     
     // main clustering loop (runs L+1 times)
     for ( iteration = 0; iteration <= L; iteration++ ) {
@@ -109,10 +109,10 @@ void clustering(uint n, uint k, centre_type *initial_centres, data_type_short *d
     }           
      
     // stop timer
-    GETTIME(end);
+  /*  GETTIME(end);
     usecs = GETUSEC(end,start);
     t = clock() - t; 
         
-    printf("Filtering time (using GETTIME): %d us\n",usecs);
+    printf("Filtering time (using GETTIME): %d us\n",usecs);*/
     
 }

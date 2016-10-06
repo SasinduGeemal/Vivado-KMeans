@@ -13,7 +13,7 @@
 //#include <stdbool.h>
 #include <time.h>
 #include <time.h>
-#include <unistd.h>
+//#include <unistd.h>
 #include "my_util.h"
 #include "lloyds.h"
 #include "filter_it.h"
@@ -22,17 +22,17 @@
 
 int main(int argc, char** argv)
 {
-    uint k = 128;
-    uint n = 16384;  
-    const double std_dev = 0.20;
+    uint k = 4;
+    uint n = 128;  
+    const double std_dev = 0.75 ;
     const uint fidx = 1;      
     
     // works for linux!
-    char path[FILENAME_MAX];
-    if (!getcwd(path, sizeof(path))){
+    char *path  ="G:/PARAQUM/K-mean_Clustering/Vivado-KMeans/c_code_for_comparison";
+  /*  if (!getcwd(path, sizeof(path))){
         printf("ERROR: getcwd failed\n");
         return EXIT_SUCCESS;  
-    }
+    }*/
     printf("Working directory is: %s\n",path);
 
     // allocate input arrays 
